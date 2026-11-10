@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ConnectSphere – Professional Video Meeting Platform</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="brand">
+    <span class="brand-icon">🔵</span>
+    <span class="brand-name">ConnectSphere</span>
+    <span class="brand-tag">Pro</span>
+  </div>
+  <nav>
+    <span id="roomLabel" class="room-label" style="display:none"></span>
+    <button class="btn-sm btn-leave-nav" id="leaveBtn" style="display:none" onclick="leaveRoom()">🚪 Leave Room</button>
+    <a href="#" id="navLogin" class="nav-btn-login">🔑 Login / Register</a>
+    <a href="#" id="navLogout" class="nav-btn-logout" style="display:none">👤 Sign Out</a>
+  </nav>
+</header>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<main>
+
+  <!-- ══ AUTH MODAL ════════════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="authOverlay" style="display:none" onclick="closeAuthIfOverlay(event)">
+    <div class="card auth-card" id="authPanel">
+      <div class="auth-header">
+        <div>
+          <div class="auth-brand">🔵 ConnectSphere</div>
+          <h2 id="authTitle">Welcome Back</h2>
+          <p class="muted" style="font-size:12px;margin-top:2px">Your professional video meeting platform</p>
+        </div>
+        <button class="btn-ghost close-btn" onclick="document.getElementById('authOverlay').style.display='none'">✕</button>
+      </div>
+      <form id="authForm" novalidate>
+        <div id="nameWrap" style="display:none">
+          <label>Full Name</label>
+          <input name="name" placeholder="e.g. Janavi Jadhav" autocomplete="name" />
+        </div>
+        <label>Email Address</label>
+        <input name="email" type="email" required placeholder="yourname@gmail.com" />
+        <label>Password <span class="muted">(minimum 8 characters)</span></label>
+        <input name="password" type="password" required minlength="8" placeholder="••••••••" />
+        <button type="submit" id="authSubmit" class="btn-auth">Continue →</button>
+      </form>
+      <p class="auth-switch muted" id="authSwitch"></p>
+      <div class="auth-badges">
+        <span>🔒 Secure</span>
+        <span>🇮🇳 Made in India</span>
+        <span>⚡ Fast & Reliable</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ LOBBY / HOME PAGE ════════════════════════════════════════════════ -->
+  <section id="lobby">
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="spark-dot"></span>
+          <span>✦ &nbsp;Real-Time Collaboration Platform</span>
+        </div>
+        <h1 class="hero-title">
+          Connect. Collaborate.<br/>
+          <span class="highlight-text">Get Things Done.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Professional video meetings with HD calls, screen sharing, live chat,
+          file transfer and a collaborative whiteboard — all in your browser. No downloads needed.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">10K+</span>
+            <span class="stat-label">Active Users</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Daily Meetings</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">99.9%</span>
+            <span class="stat-label">Uptime</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mock-screen">
+          <div class="mock-bar">
+            <span class="mock-dot red-dot"></span>
+            <span class="mock-dot yellow-dot"></span>
+            <span class="mock-dot green-dot-m"></span>
+            <span class="mock-url">connectsphere.app/dev-team-01</span>
+          </div>
+          <div class="mock-grid">
+            <div class="mock-vid saffron-vid">
+              <div class="mock-avatar">JJ</div>
+              <div class="mock-vname">Janavi Jadhav</div>
+            </div>
+            <div class="mock-vid green-vid">
+              <div class="mock-avatar">KT</div>
+              <div class="mock-vname">Kajal Tiwari</div>
+            </div>
+            <div class="mock-vid navy-vid">
+              <div class="mock-avatar">TI</div>
+              <div class="mock-vname">Tejaswini Ingle</div>
+            </div>
+            <div class="mock-vid purple-vid">
+              <div class="mock-avatar">RN</div>
+              <div class="mock-vname">Reena N.</div>
+            </div>
+          </div>
+          <div class="mock-controls">
+            <span class="mock-ctrl">🎙️</span>
+            <span class="mock-ctrl">📷</span>
+            <span class="mock-ctrl">🖥️</span>
+            <span class="mock-ctrl leave-ctrl">🚪</span>
+          </div>
+        </div>
+        <div class="hero-floating f1">💬 Chat Active</div>
+        <div class="hero-floating f2">📎 File Shared</div>
+        <div class="hero-floating f3">✋ Hand Raised</div>
+      </div>
+    </div>
+
+    <!-- JOIN MEETING CARD -->
+    <div class="join-section">
+      <div class="card join-card">
+        <div class="join-header">
+          <div class="join-icon">🎥</div>
+          <div>
+            <h2>Join a Meeting</h2>
+            <p class="muted">Enter your name and room code to start collaborating</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>👤 Your Display Name</label>
+            <input id="displayName" placeholder="e.g. Janavi Jadhav" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label>🏠 Room Code <span class="muted">(3–40 chars: letters, numbers, - or _)</span></label>
+            <input id="roomCode" placeholder="e.g. team-room-01"
+              onkeydown="if(event.key==='Enter') joinRoom()" />
+          </div>
+        </div>
+        <div class="join-actions">
+          <button class="btn-join" onclick="joinRoom()">
+            <span>🎥</span> Join Meeting
+          </button>
+          <button class="btn-quick" onclick="quickRoom()">
+            <span>⚡</span> Quick Room
+          </button>
+        </div>
+        <p id="lobbyStatus" class="lobby-status">🔒 Camera and microphone access is requested after joining — we respect your privacy.</p>
+      </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <div class="features-section">
+      <div class="section-header">
+        <span class="section-pill">FEATURES</span>
+        <h2 class="section-title">Everything you need to meet professionally</h2>
+        <p class="muted">Built with the latest web technologies for a seamless experience</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap saffron-bg">📹</div>
+          <h3>HD Video Calling</h3>
+          <p>Crystal-clear HD video with multi-participant support. See everyone clearly, no matter where they are.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap blue-bg">💬</div>
+          <h3>Real-time Chat</h3>
+          <p>Instant messaging during meetings with timestamps. Keep conversations flowing without interruptions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap green-bg">🖥️</div>
+          <h3>Screen Sharing</h3>
+          <p>Share your entire screen or specific windows with one click. Perfect for presentations and demos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap purple-bg">🎨</div>
+          <h3>Collaborative Whiteboard</h3>
+          <p>Draw and brainstorm together in real-time. Strokes sync instantly to every participant in the room.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap orange-bg">📎</div>
+          <h3>File Sharing</h3>
+          <p>Share documents, images and files instantly during your meeting. Easy download for all participants.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap teal-bg">🔒</div>
+          <h3>Secure & Private</h3>
+          <p>End-to-end encrypted connections. Your meetings are private and your data stays safe always.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRUST SECTION -->
+    <div class="trust-section">
+      <div class="trust-wave">
+        <span class="tw tw1"></span>
+        <span class="tw tw2"></span>
+        <span class="tw tw3"></span>
+      </div>
+      <h2>Trusted by teams and professionals worldwide</h2>
+      <p class="muted">From student projects to enterprise teams — ConnectSphere powers real-time collaboration</p>
+      <div class="trust-logos">
+        <div class="trust-item">🏢 Startups</div>
+        <div class="trust-item">🏫 Education</div>
+        <div class="trust-item">🏥 Healthcare</div>
+        <div class="trust-item">💼 Enterprises</div>
+        <div class="trust-item">🏛️ Government</div>
+        <div class="trust-item">🎓 Students</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══ MEETING SECTION ═══════════════════════════════════════════════════ -->
+  <section id="meetingSection" style="display:none">
+    <div class="meeting-layout">
+
+      <!-- Stage -->
+      <div class="stage-col">
+        <div class="card stage-card">
+          <div class="stage-toolbar">
+            <div class="stage-info">
+              <span class="room-pill" id="stageRoomLabel"></span>
+              <span class="live-badge">🔴 LIVE</span>
+            </div>
+            <div class="controls row gap-10">
+              <button class="ctrl-btn" id="micBtn"    onclick="toggleMedia('audio')" title="Toggle mic">🎙️ Mic</button>
+              <button class="ctrl-btn" id="camBtn"    onclick="toggleMedia('video')" title="Toggle camera">📷 Cam</button>
+              <button class="ctrl-btn" id="screenBtn" onclick="shareScreen()"        title="Share screen">🖥️ Screen</button>
+              <button class="ctrl-btn" id="handBtn"   onclick="raiseHand()"          title="Raise hand">✋ Hand</button>
+              <button class="ctrl-btn btn-leave" onclick="leaveRoom()">🚪 Leave</button>
+            </div>
+          </div>
+          <div id="videos" class="videos-grid">
+            <div class="video-wrap" id="localWrap">
+              <video id="localVideo" autoplay muted playsinline></video>
+              <span class="video-label">You</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Whiteboard -->
+        <div class="card wb-card" style="margin-top:16px">
+          <div class="wb-header">
+            <h3>🎨 Collaborative Whiteboard</h3>
+            <div class="row gap-10">
+              <input type="color" id="brushColor" value="#ff6700" title="Brush colour"
+                style="width:36px;height:34px;padding:2px;border-radius:7px;cursor:pointer;border:1.5px solid var(--border);margin:0" />
+              <input type="range" id="brushSize" min="1" max="20" value="3" title="Brush size"
+                style="width:80px;margin:0" />
+              <button class="btn-sm btn-outline" onclick="clearBoard()">🗑️ Clear</button>
+            </div>
+          </div>
+          <canvas id="boardCanvas" width="1000" height="400"
+            style="width:100%;border:1.5px solid var(--border);border-radius:10px;touch-action:none;background:#fff;display:block;margin-top:10px"></canvas>
+          <p class="muted" style="margin-top:6px;font-size:12px">✏️ Draw freely — strokes sync to everyone in the room instantly.</p>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar-col">
+        <!-- Participants -->
+        <div class="card sidebar-card">
+          <h3>👥 Participants <span class="count-badge" id="participantCount">1</span></h3>
+          <div id="participantList" class="participant-list"></div>
+        </div>
+
+        <!-- Chat -->
+        <div class="card sidebar-card">
+          <h3>💬 Room Chat</h3>
+          <div id="chat" class="chat-box"></div>
+          <div class="chat-input-row">
+            <input id="chatInput" placeholder="Type a message…" maxlength="500"
+              onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat()}" />
+            <button class="btn-sm" onclick="sendChat()">Send</button>
+          </div>
+        </div>
+
+        <!-- Files -->
+        <div class="card sidebar-card">
+          <h3>📎 File Share <span class="muted">(max 2 MB)</span></h3>
+          <input type="file" id="fileInput" style="margin:6px 0 10px" />
+          <button class="btn-sm btn-outline" onclick="sendFile()">📤 Share File</button>
+          <div id="fileList" class="file-list"></div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">🔵 ConnectSphere</div>
+    <p class="footer-tagline">Professional Video Meeting Platform</p>
+    <div class="footer-tricolor">
+      <span class="ft saffron-ft"></span>
+      <span class="ft white-ft"></span>
+      <span class="ft green-ft"></span>
+    </div>
+    <p class="muted" style="font-size:12px;margin-top:12px">
+      Built with ❤️ for <strong>CodeAlpha Full Stack Development Internship</strong> · Educational MVP
+    </p>
+    <p class="muted" style="font-size:11px;margin-top:4px">
+      🔒 Secure WebRTC · ⚡ Real-time Socket.IO · 🎯 Browser-based · No app required
+    </p>
+  </div>
+</footer>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+<script>
+  // Close auth modal on overlay click
+  function closeAuthIfOverlay(e) {
+    if (e.target.id === 'authOverlay') {
+      document.getElementById('authOverlay').style.display = 'none';
+    }
+  }
+</script>
+</body>
+</html>

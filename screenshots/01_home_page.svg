@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="hdr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="55%" style="stop-color:#0D2456"/>
+      <stop offset="100%" style="stop-color:#1A56DB"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC"/>
+      <stop offset="100%" style="stop-color:#EEF4FF"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1A56DB"/>
+      <stop offset="100%" style="stop-color:#1348C8"/>
+    </linearGradient>
+    <linearGradient id="mock1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A56DB"/>
+      <stop offset="100%" style="stop-color:#1348C8"/>
+    </linearGradient>
+    <linearGradient id="mock2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#047857"/>
+      <stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+    <linearGradient id="mock3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="100%" style="stop-color:#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="mock4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D9488"/>
+      <stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+
+  <!-- Header -->
+  <rect width="1280" height="64" fill="url(#hdr)"/>
+  <rect y="61" width="1280" height="3" fill="#1A56DB"/>
+  <!-- Brand -->
+  <circle cx="30" cy="32" r="10" fill="#3b82f6"/>
+  <text x="48" y="38" font-family="Arial Black,sans-serif" font-weight="900" font-size="20" fill="white">ConnectSphere</text>
+  <rect x="206" y="22" width="30" height="18" rx="9" fill="#1A56DB"/>
+  <text x="221" y="35" font-family="Arial,sans-serif" font-weight="700" font-size="9" fill="white" text-anchor="middle">PRO</text>
+  <!-- Nav Login button -->
+  <rect x="1150" y="18" width="110" height="30" rx="8" fill="url(#btn)"/>
+  <text x="1205" y="38" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="white" text-anchor="middle">🔑 Login</text>
+
+  <!-- Hero Left -->
+  <!-- Badge -->
+  <rect x="60" y="90" width="230" height="28" rx="14" fill="#EEF4FF" stroke="#1A56DB" stroke-width="1.5"/>
+  <circle cx="80" cy="104" r="5" fill="#1A56DB"/>
+  <text x="92" y="109" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#1348C8">✦  Real-Time Collaboration Platform</text>
+
+  <!-- Hero Title -->
+  <text x="60" y="160" font-family="Arial Black,sans-serif" font-weight="900" font-size="44" fill="#0F1824">Connect. Collaborate.</text>
+  <text x="60" y="215" font-family="Arial Black,sans-serif" font-weight="900" font-size="44" fill="#1A56DB">Get Things Done.</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="260" font-family="Arial,sans-serif" font-size="14" fill="#374151">Professional video meetings with HD calls, screen sharing,</text>
+  <text x="60" y="280" font-family="Arial,sans-serif" font-size="14" fill="#374151">live chat, file transfer and collaborative whiteboard.</text>
+  <text x="60" y="300" font-family="Arial,sans-serif" font-size="14" fill="#374151">All in your browser. No downloads needed.</text>
+
+  <!-- Stats -->
+  <text x="60" y="360" font-family="Arial Black,sans-serif" font-weight="900" font-size="26" fill="#1A56DB">10K+</text>
+  <text x="60" y="380" font-family="Arial,sans-serif" font-size="10" fill="#6B7280" letter-spacing="1">ACTIVE USERS</text>
+  <rect x="130" y="345" width="1" height="40" fill="#E5E7EB"/>
+  <text x="145" y="360" font-family="Arial Black,sans-serif" font-weight="900" font-size="26" fill="#1A56DB">500+</text>
+  <text x="145" y="380" font-family="Arial,sans-serif" font-size="10" fill="#6B7280" letter-spacing="1">DAILY MEETINGS</text>
+  <rect x="230" y="345" width="1" height="40" fill="#E5E7EB"/>
+  <text x="245" y="360" font-family="Arial Black,sans-serif" font-weight="900" font-size="26" fill="#1A56DB">99.9%</text>
+  <text x="245" y="380" font-family="Arial,sans-serif" font-size="10" fill="#6B7280" letter-spacing="1">UPTIME</text>
+
+  <!-- Mock Screen Right -->
+  <rect x="690" y="80" width="480" height="310" rx="16" fill="#0F1824"/>
+  <!-- Mock bar -->
+  <rect x="690" y="80" width="480" height="38" rx="16" fill="#1a2340"/>
+  <rect x="690" y="98" width="480" height="20" fill="#1a2340"/>
+  <circle cx="712" cy="99" r="6" fill="#EF4444"/>
+  <circle cx="732" cy="99" r="6" fill="#F59E0B"/>
+  <circle cx="752" cy="99" r="6" fill="#10B981"/>
+  <rect x="790" y="90" width="260" height="18" rx="9" fill="rgba(255,255,255,0.08)"/>
+  <text x="920" y="103" font-family="monospace" font-size="10" fill="#aaa" text-anchor="middle">connectsphere.app/dev-team-01</text>
+
+  <!-- Video grid 2x2 -->
+  <!-- JJ -->
+  <rect x="698" y="126" width="224" height="168" rx="10" fill="url(#mock1)"/>
+  <circle cx="810" cy="192" r="28" fill="rgba(255,255,255,0.25)"/>
+  <text x="810" y="200" font-family="Arial Black,sans-serif" font-weight="900" font-size="16" fill="white" text-anchor="middle">JJ</text>
+  <text x="810" y="276" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,0.9)" text-anchor="middle">Janavi Jadhav</text>
+  <!-- KT -->
+  <rect x="930" y="126" width="232" height="168" rx="10" fill="url(#mock2)"/>
+  <circle cx="1046" cy="192" r="28" fill="rgba(255,255,255,0.25)"/>
+  <text x="1046" y="200" font-family="Arial Black,sans-serif" font-weight="900" font-size="16" fill="white" text-anchor="middle">KT</text>
+  <text x="1046" y="276" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,0.9)" text-anchor="middle">Kajal Tiwari</text>
+  <!-- TI -->
+  <rect x="698" y="302" width="224" height="80" rx="10" fill="url(#mock3)"/>
+  <circle cx="810" cy="335" r="18" fill="rgba(255,255,255,0.25)"/>
+  <text x="810" y="341" font-family="Arial Black,sans-serif" font-weight="900" font-size="11" fill="white" text-anchor="middle">TI</text>
+  <text x="810" y="372" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="rgba(255,255,255,0.9)" text-anchor="middle">Tejaswini Ingle</text>
+  <!-- RN -->
+  <rect x="930" y="302" width="232" height="80" rx="10" fill="url(#mock4)"/>
+  <circle cx="1046" cy="335" r="18" fill="rgba(255,255,255,0.25)"/>
+  <text x="1046" y="341" font-family="Arial Black,sans-serif" font-weight="900" font-size="11" fill="white" text-anchor="middle">RN</text>
+  <text x="1046" y="372" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="rgba(255,255,255,0.9)" text-anchor="middle">Reena N.</text>
+
+  <!-- Mock controls -->
+  <rect x="690" y="390" width="480" height="38" rx="0" fill="#0d1526"/>
+  <rect x="690" y="390" width="480" height="38" fill="#0d1526"/>
+  <rect x="690" y="410" width="480" height="18" fill="#0d1526"/>
+  <rect x="800" y="395" width="34" height="28" rx="7" fill="rgba(255,255,255,0.1)"/>
+  <text x="817" y="414" font-size="14" text-anchor="middle">🎙️</text>
+  <rect x="844" y="395" width="34" height="28" rx="7" fill="rgba(255,255,255,0.1)"/>
+  <text x="861" y="414" font-size="14" text-anchor="middle">📷</text>
+  <rect x="888" y="395" width="34" height="28" rx="7" fill="rgba(255,255,255,0.1)"/>
+  <text x="905" y="414" font-size="14" text-anchor="middle">🖥️</text>
+  <rect x="932" y="395" width="34" height="28" rx="7" fill="rgba(185,28,28,0.3)"/>
+  <text x="949" y="414" font-size="14" text-anchor="middle">🚪</text>
+
+  <!-- Floating badges -->
+  <rect x="1100" y="62" width="130" height="34" rx="10" fill="white" filter="url(#shadow)"/>
+  <rect x="1100" y="62" width="4" height="34" rx="2" fill="#1A56DB"/>
+  <text x="1114" y="84" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#0F1824">💬 Chat Active</text>
+
+  <rect x="1116" y="290" width="145" height="34" rx="10" fill="white"/>
+  <rect x="1116" y="290" width="4" height="34" rx="2" fill="#047857"/>
+  <text x="1130" y="312" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#0F1824">📎 File Shared</text>
+
+  <rect x="700" y="438" width="145" height="34" rx="10" fill="white"/>
+  <rect x="700" y="438" width="4" height="34" rx="2" fill="#7C3AED"/>
+  <text x="714" y="460" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#0F1824">✋ Hand Raised</text>
+
+  <!-- Join Card -->
+  <rect x="60" y="430" width="600" height="160" rx="16" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="60" y="430" width="600" height="4" rx="2" fill="#1A56DB"/>
+  <!-- Icon -->
+  <rect x="80" y="450" width="52" height="52" rx="13" fill="url(#btn)"/>
+  <text x="106" y="483" font-size="22" text-anchor="middle">🎥</text>
+  <!-- Text -->
+  <text x="148" y="470" font-family="Arial Black,sans-serif" font-weight="800" font-size="16" fill="#0F1824">Join a Meeting</text>
+  <text x="148" y="488" font-family="Arial,sans-serif" font-size="12" fill="#6B7280">Enter your name and room code to start collaborating</text>
+  <!-- Input fields -->
+  <rect x="80" y="510" width="260" height="38" rx="9" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="96" y="534" font-family="Arial,sans-serif" font-size="13" fill="#9CA3AF">e.g. Janavi Jadhav</text>
+  <rect x="356" y="510" width="284" height="38" rx="9" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="372" y="534" font-family="Arial,sans-serif" font-size="13" fill="#9CA3AF">e.g. dev-team-01</text>
+  <!-- Buttons -->
+  <rect x="80" y="558" width="150" height="38" rx="11" fill="url(#btn)"/>
+  <text x="155" y="582" font-family="Arial,sans-serif" font-weight="800" font-size="13" fill="white" text-anchor="middle">🎥 Join Meeting</text>
+  <rect x="244" y="558" width="130" height="38" rx="11" fill="white" stroke="#1A56DB" stroke-width="2"/>
+  <text x="309" y="582" font-family="Arial,sans-serif" font-weight="800" font-size="13" fill="#1A56DB" text-anchor="middle">⚡ Quick Room</text>
+
+  <!-- Footer strip -->
+  <rect y="690" width="1280" height="30" fill="#0A1628"/>
+  <text x="640" y="710" font-family="Arial,sans-serif" font-size="11" fill="#7a93b8" text-anchor="middle">🔵 ConnectSphere · Professional Video Meeting Platform · CodeAlpha Full Stack Internship</text>
+</svg>

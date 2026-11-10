@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="hdr2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="55%" style="stop-color:#0D2456"/>
+      <stop offset="100%" style="stop-color:#1A56DB"/>
+    </linearGradient>
+    <linearGradient id="v1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A56DB"/><stop offset="100%" style="stop-color:#1348C8"/>
+    </linearGradient>
+    <linearGradient id="v2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#047857"/><stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+    <linearGradient id="v3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/><stop offset="100%" style="stop-color:#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="v4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D9488"/><stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BG -->
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+
+  <!-- Header -->
+  <rect width="1280" height="64" fill="url(#hdr2)"/>
+  <rect y="61" width="1280" height="3" fill="#1A56DB"/>
+  <circle cx="30" cy="32" r="10" fill="#3b82f6"/>
+  <text x="48" y="38" font-family="Arial Black,sans-serif" font-weight="900" font-size="20" fill="white">ConnectSphere</text>
+  <!-- Room label -->
+  <rect x="600" y="20" width="140" height="26" rx="13" fill="rgba(255,255,255,0.1)"/>
+  <text x="670" y="37" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#ffd700" text-anchor="middle">📍 dev-team-01</text>
+  <!-- LIVE badge -->
+  <rect x="755" y="20" width="70" height="26" rx="13" fill="rgba(185,28,28,0.3)"/>
+  <text x="790" y="37" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#fca5a5" text-anchor="middle">🔴 LIVE</text>
+  <!-- Leave btn -->
+  <rect x="1150" y="18" width="110" height="30" rx="8" fill="rgba(185,28,28,0.3)" stroke="rgba(185,28,28,0.4)" stroke-width="1"/>
+  <text x="1205" y="38" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#fca5a5" text-anchor="middle">🚪 Leave Room</text>
+
+  <!-- Stage toolbar dark -->
+  <rect x="20" y="78" width="930" height="52" rx="0" fill="#0F1824"/>
+  <rect x="20" y="78" width="930" height="52" fill="#0F1824"/>
+  <!-- Room pill -->
+  <rect x="34" y="90" width="120" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+  <text x="94" y="107" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#a5c8ff" text-anchor="middle">dev-team-01</text>
+  <rect x="162" y="90" width="60" height="26" rx="13" fill="rgba(185,28,28,0.3)"/>
+  <text x="192" y="107" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="#fca5a5" text-anchor="middle">🔴 LIVE</text>
+  <!-- Controls -->
+  <rect x="600" y="88" width="80" height="30" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="640" y="108" font-family="Arial,sans-serif" font-weight="600" font-size="12" fill="#e0eeff" text-anchor="middle">🎙️ Mic</text>
+  <rect x="692" y="88" width="80" height="30" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="732" y="108" font-family="Arial,sans-serif" font-weight="600" font-size="12" fill="#e0eeff" text-anchor="middle">📷 Cam</text>
+  <rect x="784" y="88" width="90" height="30" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="829" y="108" font-family="Arial,sans-serif" font-weight="600" font-size="12" fill="#e0eeff" text-anchor="middle">🖥️ Screen</text>
+  <rect x="886" y="88" width="56" height="30" rx="8" fill="rgba(220,38,38,0.2)" stroke="rgba(220,38,38,0.3)" stroke-width="1"/>
+  <text x="914" y="108" font-family="Arial,sans-serif" font-weight="600" font-size="12" fill="#fca5a5" text-anchor="middle">🚪</text>
+
+  <!-- Videos grid dark bg -->
+  <rect x="20" y="130" width="930" height="380" fill="#0d1620"/>
+  <!-- Video 1 - JJ -->
+  <rect x="34" y="144" width="210" height="158" rx="10" fill="url(#v1)"/>
+  <circle cx="139" cy="206" r="30" fill="rgba(255,255,255,0.2)"/>
+  <text x="139" y="214" font-family="Arial Black,sans-serif" font-weight="900" font-size="17" fill="white" text-anchor="middle">JJ</text>
+  <rect x="40" y="286" width="90" height="20" rx="8" fill="rgba(0,0,0,0.55)"/>
+  <text x="85" y="300" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="white" text-anchor="middle">Janavi Jadhav</text>
+  <!-- Video 2 - KT -->
+  <rect x="254" y="144" width="210" height="158" rx="10" fill="url(#v2)"/>
+  <circle cx="359" cy="206" r="30" fill="rgba(255,255,255,0.2)"/>
+  <text x="359" y="214" font-family="Arial Black,sans-serif" font-weight="900" font-size="17" fill="white" text-anchor="middle">KT</text>
+  <rect x="260" y="286" width="90" height="20" rx="8" fill="rgba(0,0,0,0.55)"/>
+  <text x="305" y="300" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="white" text-anchor="middle">Kajal Tiwari</text>
+  <!-- Video 3 - TI -->
+  <rect x="474" y="144" width="210" height="158" rx="10" fill="url(#v3)"/>
+  <circle cx="579" cy="206" r="30" fill="rgba(255,255,255,0.2)"/>
+  <text x="579" y="214" font-family="Arial Black,sans-serif" font-weight="900" font-size="17" fill="white" text-anchor="middle">TI</text>
+  <rect x="480" y="286" width="110" height="20" rx="8" fill="rgba(0,0,0,0.55)"/>
+  <text x="535" y="300" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="white" text-anchor="middle">Tejaswini Ingle</text>
+  <!-- Video 4 - RN -->
+  <rect x="694" y="144" width="210" height="158" rx="10" fill="url(#v4)"/>
+  <circle cx="799" cy="206" r="30" fill="rgba(255,255,255,0.2)"/>
+  <text x="799" y="214" font-family="Arial Black,sans-serif" font-weight="900" font-size="17" fill="white" text-anchor="middle">RN</text>
+  <rect x="700" y="286" width="70" height="20" rx="8" fill="rgba(0,0,0,0.55)"/>
+  <text x="735" y="300" font-family="Arial,sans-serif" font-weight="700" font-size="10" fill="white" text-anchor="middle">Reena N.</text>
+
+  <!-- Whiteboard preview -->
+  <rect x="20" y="520" width="930" height="140" rx="0" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="40" y="548" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#0F1824">🎨 Collaborative Whiteboard</text>
+  <rect x="40" y="558" width="880" height="88" rx="10" fill="#fafafa" stroke="#E5E7EB" stroke-width="1.5"/>
+  <!-- Fake drawing lines -->
+  <path d="M 80 610 Q 160 570 240 600 Q 320 630 400 590 Q 480 555 560 585" stroke="#1A56DB" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 600 580 Q 650 610 700 575 Q 750 545 800 570" stroke="#047857" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="470" y="650" font-family="Arial,sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">✏️ Draw freely — strokes sync to everyone in the room instantly.</text>
+
+  <!-- Sidebar -->
+  <!-- Participants -->
+  <rect x="966" y="78" width="294" height="180" rx="14" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="986" y="106" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#0F1824">👥 Participants</text>
+  <rect x="1150" y="92" width="24" height="18" rx="9" fill="#EEF4FF"/>
+  <text x="1162" y="105" font-family="Arial,sans-serif" font-weight="800" font-size="10" fill="#1A56DB" text-anchor="middle">4</text>
+  <circle cx="994" cy="128" r="5" fill="#047857"/>
+  <text x="1008" y="133" font-family="Arial,sans-serif" font-size="12" fill="#0F1824">Janavi Jadhav (you)</text>
+  <circle cx="994" cy="150" r="5" fill="#047857"/>
+  <text x="1008" y="155" font-family="Arial,sans-serif" font-size="12" fill="#0F1824">Kajal Tiwari</text>
+  <circle cx="994" cy="172" r="5" fill="#047857"/>
+  <text x="1008" y="177" font-family="Arial,sans-serif" font-size="12" fill="#0F1824">Tejaswini Ingle</text>
+  <circle cx="994" cy="194" r="5" fill="#047857"/>
+  <text x="1008" y="199" font-family="Arial,sans-serif" font-size="12" fill="#0F1824">Reena N.</text>
+  <circle cx="994" cy="216" r="5" fill="#047857"/>
+  <text x="1008" y="221" font-family="Arial,sans-serif" font-size="12" fill="#0F1824">Aik</text>
+
+  <!-- Chat -->
+  <rect x="966" y="270" width="294" height="220" rx="14" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="986" y="298" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#0F1824">💬 Room Chat</text>
+  <rect x="980" y="308" width="266" height="140" rx="10" fill="#F8FAFC" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="992" y="330" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#1348C8">Janavi Jadhav</text>
+  <text x="992" y="346" font-family="Arial,sans-serif" font-size="11" fill="#374151">Hello everyone! 👋</text>
+  <text x="992" y="368" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#1348C8">Kajal Tiwari</text>
+  <text x="992" y="384" font-family="Arial,sans-serif" font-size="11" fill="#374151">Ready for the meeting 🎯</text>
+  <text x="992" y="406" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#6B7280">System</text>
+  <text x="992" y="422" font-family="Arial,sans-serif" font-size="11" fill="#374151">Tejaswini Ingle joined the room</text>
+  <!-- Chat input -->
+  <rect x="980" y="454" width="210" height="32" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="996" y="474" font-family="Arial,sans-serif" font-size="12" fill="#9CA3AF">Type a message…</text>
+  <rect x="1198" y="454" width="48" height="32" rx="8" fill="#1A56DB"/>
+  <text x="1222" y="474" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="white" text-anchor="middle">Send</text>
+
+  <!-- File Share -->
+  <rect x="966" y="502" width="294" height="120" rx="14" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="986" y="530" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#0F1824">📎 File Share</text>
+  <rect x="980" y="542" width="266" height="38" rx="9" fill="#F8FAFC" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="996" y="566" font-family="Arial,sans-serif" font-size="12" fill="#374151">📄 project-report.pdf</text>
+  <text x="1200" y="566" font-family="Arial,sans-serif" font-size="10" fill="#6B7280" text-anchor="end">from Janavi</text>
+  <rect x="980" y="588" width="110" height="28" rx="8" fill="white" stroke="#1A56DB" stroke-width="1.5"/>
+  <text x="1035" y="606" font-family="Arial,sans-serif" font-weight="700" font-size="11" fill="#1A56DB" text-anchor="middle">📤 Share File</text>
+
+  <!-- Footer -->
+  <rect y="690" width="1280" height="30" fill="#0A1628"/>
+  <text x="640" y="710" font-family="Arial,sans-serif" font-size="11" fill="#7a93b8" text-anchor="middle">🔵 ConnectSphere · Professional Video Meeting Platform · CodeAlpha Full Stack Internship</text>
+</svg>
